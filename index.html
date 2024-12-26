@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Sidro Beljin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="js">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Parkinsans:wght@300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body style="background-color: rgb(249,249,249);">
+    <header class="main-header">
+        <div class="logo">
+            <img class="mr" style="width: 64px;" src="sidro.avif" alt="">
+            <h2 class="mr" style="font-family: Baskervville; color: #BFA660;">Sidro</h2>
+        </div>
+        <nav class="nav-links">
+            <ul style="list-style: none;">
+                <li><a href="index.html">POČETNA</a></li>
+                <li><a href="o nama.html">O NAMA</a></li>
+                <li><a href="jelovnik.pdf">JELOVNIK</a></li>
+                <li><a href="galerija.html">GALERIJA</a></li>
+                <li><a href="#contact">REZERVACIJE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slideshow">
+        <div class="slide"><img src="img1.avif"></div>
+        <div class="slide"><img src="img2.avif"></div>
+        <div class="slide"><img src="img3.avif"></div>
+        <div class="slide"><img src="terasa2.jpg"></div>
+        <div class="slide"><img src="_DSC5148.avif"></div>
+        <div class="slide"><img src="_DSC5157.avif"></div>
+
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+            slide.classList.add('active');
+        }
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+// Start the slideshow
+showSlide(currentSlide);
+setInterval(nextSlide, 3000); // Change slide every 3 seconds
+
+    </script>
+    <br><br><br>
+<div class="welcome">
+    <h2><em>=</em> DOBRODOŠLI <em>=</em></h2>
+</div>
+
+<br>
+
+<p style="text-align: center;">Restoran Sidro Beljin je počeo sa radom 2018. g.<br>Nalazi se na samoj obali reke Save, između Obrenovca i Šapca.<br>
+U našoj ponudi možete naći riblje specijalitete, jela sa roštilja,<br>kuvana jela i omiljeno jelo najmladjih- pize.<br>
+U letnjim mesecima nasi gosti mogu da uživaju u hrani<br> i prelepom pogledu na reku sa naše terase.
+</p>
+
+<h6 style="text-align: center;">Mogućnost plaćanja karticom.</h6>
+
+
+<div style="color: rgb(249,249,249); text-align: center; background-image: url(_DSC5141.avif); background-repeat: no-repeat; background-attachment: fixed; -webkit-filter: grayscale(100);">
+    <br>
+<h2>RADNO VREME</h2>
+<h3>Nedelja-Četvrtak<br>12:00-23:00<br><br>Petak i Subota<br>12:00-24:00</h3>
+<h4>SLOBODAN DAN: UTORAK</h4>
+<br>
+</div>
+<br><br><br><br><br><br>
+    <br>
+    <h2 style="color: #BFA660; text-align: center;">JELOVNIK</h2>
+
+    <div class="jelovnik">
+        <h3 class="meni">Riba</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li>BELA RIBA 1kg <span class="cena">1000 rsd</span></li>
+            <li>ŠARAN 1kg <span class="cena">2200 rsd</span></li>
+            <li>SOM 1kg <span class="cena">3000 rsd</span></li>
+            <li>SMUĐ 1kg <span class="cena">3200 rsd</span></li>
+        </ul> 
+    </div>
+
+    <div class="jelovnik">
+        <h3 class="meni">Roštilj</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li>MIKS ROŠTILJ 900g <span class="cena">1900 rsd</span></li>
+            <li>ĆEVAPI 400g <span class="cena">900 rsd</span></li>
+            <li>PLJESKAVICA 400g <span class="cena">900 rsd</span></li>
+            <li>ROLOVANA DIMLJENA VEŠALICA 400g <span class="cena">1100 rsd</span></li>
+        </ul>
+    </div>
+    <div class="jelovnik">
+        <h3 class="meni">Salate</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li>ŠOPSKA SALATA 200g <span class="cena">270 rsd</span></li>
+            <li>SRPSKA SALATA 200g <span class="cena">230 rsd</span></li>
+            <li>CEZAR SALATA 300g <span class="cena">700 rsd</span></li>
+            <li>PEČENA LJUTA PAPRIKA 1kom. <span class="cena">150 rsd</span></li>
+        </ul>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <div style="text-align: center; margin: 20px 0;">
+        <a href="jelovnik.pdf" class="centered-button" target="_blank">KOMPLETAN JELOVNIK</a>
+    </div>
+<br><br>
+
+<h1 class="meni">Lokacija</h1>
+    
+<div class="mapouter">
+    <div class="gmap_canvas">
+      <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+              src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=restoran%20sidro%20beljin&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+      </iframe>
+    </div>
+  </div>
+
+  <br><br><hr><br><br>
+
+<h1 style="text-align: center; color: black; ">Kontakt i rezervacije</h1>
+
+<h2 style="text-align: center; color: black;">📱<br>065 448 2200</h2>
+<br>
+<h2 style="text-align: center; color: black;">📧<br>kontaktsidro@gmail.com</h2>
+
+</body>
+</html>

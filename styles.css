@@ -1,0 +1,218 @@
+body {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+        font-family: "Parkinsans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+}
+
+.main-header {
+    position: fixed; /* Makes the header fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000be;
+    color: rgb(249,249,249);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a shadow for better separation */
+}
+
+.nav-links {
+    margin-right: 40px;
+}
+
+.logo {
+    display: flex;
+    margin-left: 40px; /* Adjust the value as needed */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(249,249,249) ;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f0a500;
+}
+
+.baskervville-regular {
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .baskervville-regular-italic {
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .slideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.welcome em{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #BFA660;
+}
+
+.flex {
+    display: flex;
+}
+
+.mr {
+    margin-right: 1em;
+}
+
+.meni {
+    color: #887025;
+    text-align: center;
+}
+
+.jelovnik {
+    padding-left: 12.96%;
+    float: left;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+.cena {
+    font-weight: 600;
+    font-style: italic;
+    float: right;
+    padding-left: 100px;
+    color: #f0a500;
+}
+
+.jelovnik-dugme {
+    align-content: center;
+}
+
+.centered-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Parkinsans", sans-serif;
+    color: #fff;
+    background-color: #BFA660; /* Matches the site's color scheme */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.centered-button:hover {
+    background-color: #A98A5E; /* Darker shade for hover effect */
+    transform: translateY(-2px); /* Slight hover lift */
+}
+
+.centered-button:active {
+    background-color: #8A6B4F; /* Even darker when clicked */
+    transform: translateY(1px); /* Subtle pressed effect */
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 600px;
+    height: 400px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 600px;
+    height: 400px;
+}
+
+.gmap_iframe {
+    width: 600px !important;
+    height: 400px !important;
+}
+
+/* Parent container for centering */
+.map-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Optional: adjust to your needs */
+}
+
+    .mapouter {
+      position: relative;
+      text-align: center; /* Center the content */
+      width: 100%; /* Make it span the full width */
+      height: 400px; /* Set a fixed height */
+      display: block; /* Ensure it's a block-level element */
+    }
+    
+    .gmap_canvas {
+      margin: 0 auto; /* Horizontally center the iframe */
+      overflow: hidden;
+      background: none!important;
+      width: 600px; /* Set the width for the map */
+      height: 400px; /* Set the height for the map */
+    }
+  
+    .gmap_iframe {
+      width: 100%!important; /* Ensure the iframe spans the container */
+      height: 100%!important; /* Ensure the iframe spans the container */
+    }
